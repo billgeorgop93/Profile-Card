@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: hsl(0, 11%, 12%);
+}
+
+section {
+  background: var(--dark-cyan);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.card {
+  width: 350px;
+  border-radius: 20px;
+  background: white;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.card-header {
+  background-image: url(./images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 150px;
+}
+
+.card-body{
+  padding: 0 20px 25px;
+}
+
+.prf-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+  margin: -50px auto 30px auto;  
+}
+
+.prf-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.age,
+.city,
+.meta {
+  font-weight: 400;
+  color: hsl(0, 11%, 12%);
+  opacity: 0.5;
+}
+
+.name-age {
+  font-size: 1.1rem;
+  margin-bottom: 20px;  
+}
+
+.age {
+  margin-left: 6px;
+}
+
+.city {
+  font-size: 0.9rem;
+}
+
+.card-footer {
+  border-top: 1px solid hsl(0, 3%, 87%);
+  display: flex;
+  padding: 0 25px;
+}
+
+.card-footer .item {
+  flex: 1;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-footer .item .value {
+  font-size: 1.1rem;
+  margin-bottom: 6px;  
+}
+
+.card-footer .item .meta {
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+}
+
+/* Graphics playing with inspect button on Chrome to fix it */
+.circles .top, 
+.circles .bottom {
+  position: absolute;
+}
+
+.circles .top {
+  top: -300px;
+  left: -175px;
+}
+
+.circles .bottom {
+  bottom: -300px;
+  right: -175px;
+}
